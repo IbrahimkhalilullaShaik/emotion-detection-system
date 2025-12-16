@@ -1,3 +1,26 @@
-# placeholder config
+project:
+  name: Real-Time Emotion Detection
+  version: 1.0
+
 dataset:
-  root: data
+  name: FER-2013
+  data_dir: data/fer2013
+  image_size: 224
+  num_classes: 7
+
+training:
+  model: MobileNetV2
+  batch_size: 16
+  epochs: 10
+  learning_rate: 0.0001
+  optimizer: Adam
+  loss: CrossEntropyLoss
+
+inference:
+  confidence_threshold: 0.5
+  smoothing_window: 7
+
+hardware:
+  device_priority:
+    - mps
+    - cpu
