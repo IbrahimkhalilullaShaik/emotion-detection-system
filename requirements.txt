@@ -1,0 +1,22 @@
+# Core numerical & data handling
+numpy
+pandas
+
+# Computer Vision
+opencv-python
+
+# Deep Learning
+torch
+torchvision
+
+# Face Detection
+mediapipe
+
+# Dataset handling & progress
+tqdm
+
+# Jupyter (optional, for notebooks)
+jupyter
+
+# Kaggle dataset download
+kagglehub
